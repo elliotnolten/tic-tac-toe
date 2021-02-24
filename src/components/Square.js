@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const style = {
   background: "lightblue",
@@ -7,13 +7,13 @@ const style = {
   fontWeight: "800",
   cursor: "pointer",
   outline: "none"
-};
+}
 
 export default function Square(props) {
-  const { onClick, value } = props;
+  const { onClick, value } = props
   return (
     <button style={style} onClick={onClick}>
       {value}
     </button>
-  );
+  )
 }

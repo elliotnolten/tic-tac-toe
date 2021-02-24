@@ -1,5 +1,5 @@
-import React from "react";
-import Square from "./Square";
+import React from "react"
+import Square from "./Square"
 
 const style = {
   border: "4px solid darkblue",
@@ -9,7 +9,7 @@ const style = {
   margin: "100px auto",
   display: "grid",
   gridTemplate: "repeat(3, 1fr) / repeat(3, 1fr)"
-};
+}
 
 export default function Board({ squares, onClick }) {
   return (
@@ -18,5 +18,5 @@ export default function Board({ squares, onClick }) {
         <Square key={i} value={square} onClick={() => onClick(i)} />
       ))}
     </div>
-  );
+  )
 }
